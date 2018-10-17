@@ -8,7 +8,7 @@ public class NetworkClient {
     public static Retrofit NetWorkClient() {
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://cognitisummits.com/mgfp/mobile/") //LiveURL
+                .baseUrl("http://countryapi.gear.host/v1/Country/") //LiveURL
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         return retrofit;
