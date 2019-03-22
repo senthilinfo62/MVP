@@ -1,6 +1,7 @@
 package multipleimagepicker.com.mvp.presenter;
 
-import multipleimagepicker.com.mvp.Model.Country;
+
+import multipleimagepicker.com.mvp.Model.CountryResponse;
 import multipleimagepicker.com.mvp.Model.LoginResponse;
 import multipleimagepicker.com.mvp.View.activity.MainActivity;
 import multipleimagepicker.com.mvp.View.mvp_view.MainviewPresenter;
@@ -23,13 +24,13 @@ public class MainPresenter implements MainviewPresenter.Presenter {
 
     @Override
     public void callMethos() {
-        Call<Country> call = apiInterface.getLogin();
-        call.enqueue(new Callback<Country>() {
+        Call<CountryResponse> call = apiInterface.getLogin();
+        call.enqueue(new Callback<CountryResponse>() {
             @Override
-            public void onResponse(Call<Country> call, Response<Country> response) {
-                Country feedResponse = response.body();
-                if(feedResponse.isSuccess()){
-                    mView.onsuccess(feedResponse);
+            public void onResponse(Call<CountryResponse> call, Response<CountryResponse> response) {
+                CountryResponse feedResponse = response.body();
+                if(feedResponse.getIsSuccess()){
+                    mView.onsuccess(feedResponse.getResponse());
 
                 }else{
                     String msg=feedResponse.getUserMessage();
@@ -39,7 +40,7 @@ public class MainPresenter implements MainviewPresenter.Presenter {
             }
 
             @Override
-            public void onFailure(Call<Country> call, Throwable t) {
+            public void onFailure(Call<CountryResponse> call, Throwable t) {
 
             }
         });

@@ -8,9 +8,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import multipleimagepicker.com.mvp.Model.Country;
+import java.util.ArrayList;
+
+
+import multipleimagepicker.com.mvp.Model.CountryModel;
 import multipleimagepicker.com.mvp.R;
-import multipleimagepicker.com.mvp.View.adapter.CountryAdapter;
+import multipleimagepicker.com.mvp.View.Adapter.CountryAdapter;
 import multipleimagepicker.com.mvp.View.mvp_view.MainviewPresenter;
 import multipleimagepicker.com.mvp.presenter.MainPresenter;
 
@@ -36,17 +39,14 @@ public class MainActivity extends AppCompatActivity implements MainviewPresenter
     }
 
 
+
     @Override
-    public void onsuccess(Country feedResponse) {
-
-
-        mAdapter = new CountryAdapter(feedResponse.getResponse(),MainActivity.this);
+    public void onsuccess(ArrayList<CountryModel> feedResponse) {
+        mAdapter = new CountryAdapter(feedResponse,MainActivity.this);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
-
-
     }
 
     @Override
