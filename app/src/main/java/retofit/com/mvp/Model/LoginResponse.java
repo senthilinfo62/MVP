@@ -1,4 +1,4 @@
-package multipleimagepicker.com.mvp.Model;
+package retofit.com.mvp.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

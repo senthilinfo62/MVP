@@ -1,4 +1,4 @@
-package multipleimagepicker.com.mvp.Model;
+package retofit.com.mvp.Model;
 
 import java.util.ArrayList;
 

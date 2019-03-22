@@ -1,4 +1,4 @@
-package multipleimagepicker.com.mvp.View.Adapter;
+package retofit.com.mvp.View.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -14,9 +14,9 @@ import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 
-import multipleimagepicker.com.mvp.Model.CountryModel;
-import multipleimagepicker.com.mvp.R;
-import multipleimagepicker.com.mvp.View.activity.MainActivity;
+import retofit.com.mvp.Model.CountryModel;
+import retofit.com.mvp.R;
+import retofit.com.mvp.View.activity.MainActivity;
 
 public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHolder> {
     Context mContext;

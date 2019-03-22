@@ -1,4 +1,4 @@
-package multipleimagepicker.com.mvp.View.activity;
+package retofit.com.mvp.View.activity;
 
 import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -11,11 +11,11 @@ import android.util.Log;
 import java.util.ArrayList;
 
 
-import multipleimagepicker.com.mvp.Model.CountryModel;
-import multipleimagepicker.com.mvp.R;
-import multipleimagepicker.com.mvp.View.Adapter.CountryAdapter;
-import multipleimagepicker.com.mvp.View.mvp_view.MainviewPresenter;
-import multipleimagepicker.com.mvp.presenter.MainPresenter;
+import retofit.com.mvp.Model.CountryModel;
+import retofit.com.mvp.R;
+import retofit.com.mvp.View.Adapter.CountryAdapter;
+import retofit.com.mvp.View.mvp_view.MainviewPresenter;
+import retofit.com.mvp.presenter.MainPresenter;
 
 public class MainActivity extends AppCompatActivity implements MainviewPresenter.View {
     MainPresenter mainPresenter;

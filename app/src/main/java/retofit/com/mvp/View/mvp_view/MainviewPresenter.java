@@ -1,9 +1,9 @@
-package multipleimagepicker.com.mvp.View.mvp_view;
+package retofit.com.mvp.View.mvp_view;
 
 import java.util.ArrayList;
 
 
-import multipleimagepicker.com.mvp.Model.CountryModel;
+import retofit.com.mvp.Model.CountryModel;
 
 public interface MainviewPresenter {
     interface View{

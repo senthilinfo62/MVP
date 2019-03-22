@@ -1,4 +1,4 @@
-package multipleimagepicker.com.mvp;
+package retofit.com.mvp;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package multipleimagepicker.com.mvp;
+package retofit.com.mvp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,12 +1,12 @@
-package multipleimagepicker.com.mvp.presenter;
+package retofit.com.mvp.presenter;
 
 
-import multipleimagepicker.com.mvp.Model.CountryResponse;
-import multipleimagepicker.com.mvp.Model.LoginResponse;
-import multipleimagepicker.com.mvp.View.activity.MainActivity;
-import multipleimagepicker.com.mvp.View.mvp_view.MainviewPresenter;
-import multipleimagepicker.com.mvp.View.network.NetworkClient;
-import multipleimagepicker.com.mvp.View.network.NetworkInterface;
+import retofit.com.mvp.Model.CountryResponse;
+import retofit.com.mvp.Model.LoginResponse;
+import retofit.com.mvp.View.activity.MainActivity;
+import retofit.com.mvp.View.mvp_view.MainviewPresenter;
+import retofit.com.mvp.View.network.NetworkClient;
+import retofit.com.mvp.View.network.NetworkInterface;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
