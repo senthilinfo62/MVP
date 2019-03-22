@@ -13,7 +13,7 @@ import retrofit2.Response;
 
 public class MainPresenter implements MainviewPresenter.Presenter {
 
-    LoginResponse loginResponse;
+
     MainviewPresenter.View mView;
     NetworkInterface apiInterface;
     public MainPresenter(MainActivity mainActivity, MainActivity mainActivity1) {
@@ -41,7 +41,7 @@ public class MainPresenter implements MainviewPresenter.Presenter {
 
             @Override
             public void onFailure(Call<CountryResponse> call, Throwable t) {
-
+                mView.onerror(t.getMessage());
             }
         });
 
